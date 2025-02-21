@@ -2,12 +2,8 @@ import {Link, Outlet} from "react-router-dom";
 
 export const App = () => {
   return (
-    <div data-testId = {'App'}>
-      <h1>PAGE</h1>
-      <Link to={'/about'}>ABOUT</Link>
-      <br/>
-      <Link to={'/shop'}>SHOP</Link>
-      <br/>
+    <div>
+      <h1>ADMIN MODULE</h1>
       <Outlet />
     </div>
   );
