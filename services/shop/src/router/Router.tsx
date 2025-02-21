@@ -5,12 +5,16 @@ import {Shop} from "@/pages/shop";
 
 const routes = [
   {
-    path: '/',
+    path: '/shop', // Меняем путь корневого роута с '/' на '/shop'
     element: <App />,
     children: [
       {
-        path: '/shop',
+        path: '/shop/main', // А тут например с '/shop' на 'shop/main'
         element: <Suspense fallback={<h1>Loading shop...</h1>}><Shop /></Suspense>
+      },
+      {
+        path: '/shop/second', // Допустим еще один роут
+        element: <Suspense fallback={<h1>Loading shop...</h1>}><div style={{color: 'red'}}>AASDADA</div></Suspense>
       },
     ]
   }
