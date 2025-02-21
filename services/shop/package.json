@@ -1,5 +1,5 @@
 {
-  "name": "host",
+  "name": "shop",
   "version": "1.0.0",
   "scripts": {
     "build:dev": "webpack --env mode=development",

@@ -1,7 +1,7 @@
 import {createBrowserRouter} from "react-router-dom";
 import {App} from "@/components/App";
 import {Suspense} from "react";
-import {Shop} from "@/pages/shop";
+import {LazyAbout} from "@/pages/about/About.lazy";
 
 const routes = [
   {
@@ -9,8 +9,8 @@ const routes = [
     element: <App />,
     children: [
       {
-        path: '/shop',
-        element: <Suspense fallback={<h1>Loading shop...</h1>}><Shop /></Suspense>
+        path: '/about',
+        element: <Suspense fallback={<h1>Loading about...</h1>}><LazyAbout /></Suspense>,
       },
     ]
   }
