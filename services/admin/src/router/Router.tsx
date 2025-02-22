@@ -5,11 +5,11 @@ import {LazyAbout} from "@/pages/about/About.lazy";
 
 const routes = [
   {
-    path: '/',
+    path: '/admin',
     element: <App />,
     children: [
       {
-        path: '/about',
+        path: '/admin/about',
         element: <Suspense fallback={<h1>Loading about...</h1>}><LazyAbout /></Suspense>,
       },
     ]
